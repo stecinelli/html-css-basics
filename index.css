@@ -3,16 +3,19 @@ body {
   text-align: center;
   color: white;
   font-size: 20px;
+  margin: 0;
   & h1 {
     font-family: "Spirax", sans-serif;
     color: red;
-    font-size: 60px;
+    font-size: 70px;
   }
 }
 
 nav {
   font-family: "Spirax", sans-serif;
   background-color: rgba(122, 45, 45, 0.7);
+  position: fixed;
+  width: 100%;
   & ul {
     list-style-type: none;
     margin: 0;
@@ -22,6 +25,10 @@ nav {
     font-size: 30px;
     padding: 20px;
     margin: 0;
+  }
+  & a {
+    text-decoration: none;
+    color: inherit;
   }
 }
 
@@ -45,20 +52,27 @@ p {
   padding-left: 5rem;
 }
 
-.Hot {
+#Hot {
   background-image: url(assets/hot.jpg);
 }
 
-.Juicy {
+#Juicy {
   background-image: url(assets/juicy.jpg);
 }
 
-.Cosy {
+#Cosy {
   background-image: url(assets/cosy.jpg);
 }
 
 div {
-  height: 600px;
+  height: 650px;
   margin: 0;
   padding-top: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.p_end {
+  margin-left: 500px;
 }
